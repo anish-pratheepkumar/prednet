@@ -19,7 +19,7 @@ Slides:
 #add the title pic
 
 ## Abstract
-
+<div style="text-align: justify">  
 Human-Robot Interaction (HRI) is becoming increasingly
 viable for flexible and resilient manufacturing, combining
 the intelligence and dexterity of humans with the precision
@@ -40,6 +40,7 @@ we propose a novel metric, namely, Volumetric Occupancy Error
 prediction architectures aimed to be applied in industrial settings.
 On both HRI scenarios and Mogaze datasets, PredNet performs
 better than baseline RED architecture.
+</div>
 
 ### Markdown
 
