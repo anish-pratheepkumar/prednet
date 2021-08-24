@@ -16,7 +16,7 @@ Slides:
 
 ---
 
-![title_image](https://github.com/anish-pratheepkumar/prednet/blob/main/images/scenarios_3B_40.png)
+![title_image](https://github.com/anish-pratheepkumar/prednet/blob/main/images/scenarios.png)
 
 ## Abstract
 <div align="justify"> Human-Robot Interaction (HRI) is becoming increasingly viable for flexible and resilient manufacturing, combining the intelligence and dexterity of humans with the precision and strength of robots. However, HRI incurs the breakage of wellestablished safety procedures and requires robots to be aware of their environment, especially their human co-workers. This calls
