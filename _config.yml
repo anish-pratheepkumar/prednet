@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
 title: PredNet
 description: a simple Human Motion Prediction Network for Human-Robot Interaction
-#show_downloads: true
+show_downloads: true
 google_analytics:
