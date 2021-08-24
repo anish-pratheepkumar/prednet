@@ -12,11 +12,34 @@ Preprint:
 
 Code: 
 
+Slides: 
+
 ---
 
-You can use the [editor on GitHub](https://github.com/anish-pratheepkumar/anish-pratheepkumar.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+#add the title pic
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Abstract
+
+Human-Robot Interaction (HRI) is becoming increasingly
+viable for flexible and resilient manufacturing, combining
+the intelligence and dexterity of humans with the precision
+and strength of robots. However, HRI incurs the breakage of wellestablished
+safety procedures and requires robots to be aware of
+their environment, especially their human co-workers. This calls
+for human motion prediction, which can improve the performance
+in HRI scenarios and contribute towards safer HRI. In this
+regard, we propose PredNet, a simple recurrent neural network
+architecture designed to predict human motion in a prediction
+window of 1 second. To address the lack of production-related
+HRI scenarios for training and validating PredNet, we develop
+simple HRI scenarios in a simulation environment, consisting of
+the following human actions: walking, lifting boxes and wiping.
+For a real world validation, we use Mogaze dataset. Furthermore,
+we propose a novel metric, namely, Volumetric Occupancy Error
+(VOE) towards measuring the safety performance of motion
+prediction architectures aimed to be applied in industrial settings.
+On both HRI scenarios and Mogaze datasets, PredNet performs
+better than baseline RED architecture.
 
 ### Markdown
 
