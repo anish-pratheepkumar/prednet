@@ -1,4 +1,8 @@
-## Welcome to GitHub Pages
+---
+layout: default
+title:  PredNet
+description: a simple Human Motion Prediction Network for Human-Robot Interaction
+---
 
 You can use the [editor on GitHub](https://github.com/anish-pratheepkumar/anish-pratheepkumar.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
