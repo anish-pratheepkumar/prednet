@@ -4,6 +4,15 @@ title:  PredNet
 description: a simple Human Motion Prediction Network for Human-Robot Interaction
 ---
 
+*Mohamed El-Shamouty and Anish Pratheepkumar*
+
+The IEEE 26th International Conference on Emerging Technologies and Factory Automation (ETFA), accepted June 2021.
+
+Preprint: 
+
+Code: 
+
+---
 
 You can use the [editor on GitHub](https://github.com/anish-pratheepkumar/anish-pratheepkumar.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
