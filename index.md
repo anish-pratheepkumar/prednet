@@ -15,7 +15,7 @@ Code:
 Slides: 
 
 ---
-<img src="https://github.com/anish-pratheepkumar/prednet/blob/main/images/scenarios.png" width="650" height="300">
+<img src="https://github.com/anish-pratheepkumar/prednet/blob/main/images/scenarios.png" width="407" height="350">
 
 
 ## Abstract
