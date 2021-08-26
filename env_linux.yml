@@ -1,0 +1,21 @@
+name: motion_prediction
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.6.9
+  - pip
+  - lxml
+  - tensorflow-gpu==1.14
+  - tensorflow-estimator
+  - tensorboard
+  - trimesh[easy]
+  - pip:
+      - click
+      - gym
+      - mujoco_py==2.0.2.10
+      - openblender==2.9 # requires: sudo apt-get install openscad blender
+      - natsort
+      - tqdm
+      - networkx # for trimesh and mesh intersection
+      - git+https://github.com/PhilippJKratzer/humoro

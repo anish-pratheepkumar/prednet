@@ -1,0 +1,279 @@
+<mujoco model="my_model">
+    <compiler angle="radian" />
+    <size njmax="500" nconmax="100" />
+    <worldbody>
+        <body name="baseTransX" pos="0 0 0">
+            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+            <joint name="baseTransX" pos="0 0 0" axis="1 0 0" type="slide" limited="true" range="0 30" />
+            <body name="baseTransY" pos="0 0 0">
+                <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                <joint name="baseTransY" pos="0 0 0" axis="0 1 0" type="slide" limited="true" range="0 30" />
+                <body name="baseTransZ" pos="0 0 0">
+                    <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                    <joint name="baseTransZ" pos="0 0 0" axis="0 0 1" type="slide" limited="true" range="0 30" />
+                    <body name="baseRotX" pos="0 0 0">
+                        <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                        <joint name="baseRotX" pos="0 0 0" axis="1 0 0" limited="true" range="-3.14 3.14" />
+                        <body name="baseRotY" pos="0 0 0">
+                            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                            <joint name="baseRotY" pos="0 0 0" axis="0 1 0" limited="true" range="-3.14 3.14" />
+                            <body name="baseRotZ" pos="0 0 0">
+                                <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                <joint name="baseRotZ" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                                <geom size="0.14 0.066" type="cylinder" contype="0" conaffinity="0" group="1" rgba="0.9 0.9 0.9 1" />
+                                <body name="pelvisTransZ" pos="0 0 0">
+                                    <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                    <joint name="pelvisTransZ" pos="0 0 0" axis="0 0 1" type="slide" limited="true" range="0 1" />
+                                    <body name="pelvisRotX" pos="0 0 0">
+                                        <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                        <joint name="pelvisRotX" pos="0 0 0" axis="1 0 0" limited="true" range="-3.14 3.14" />
+                                        <body name="pelvisRotY" pos="0 0 0">
+                                            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                            <joint name="pelvisRotY" pos="0 0 0" axis="0 1 0" limited="true" range="-3.14 3.14" />
+                                            <body name="pelvisRotZ" pos="0 0 0">
+                                                <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                <joint name="pelvisRotZ" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                                                <geom size="0.14 0.099" pos="0 0 0.0951" type="cylinder" contype="0" conaffinity="0" group="1" rgba="0.9 0.9 0.9 1" />
+                                                <body name="torsoTransX" pos="0 0 0">
+                                                    <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                    <joint name="torsoTransX" pos="0 0 0" axis="1 0 0" type="slide" limited="true" range="0 1" />
+                                                    <body name="torsoTransY" pos="0 0 0">
+                                                        <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                        <joint name="torsoTransY" pos="0 0 0" axis="0 1 0" type="slide" limited="true" range="0 1" />
+                                                        <body name="torsoTransZ" pos="0 0 0">
+                                                            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                            <joint name="torsoTransZ" pos="0 0 0" axis="0 0 1" type="slide" limited="true" range="0 1" />
+                                                            <body name="torsoRotX" pos="0 0 0">
+                                                                <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                <joint name="torsoRotX" pos="0 0 0" axis="1 0 0" limited="true" range="-3.14 3.14" />
+                                                                <body name="torsoRotY" pos="0 0 0">
+                                                                    <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                    <joint name="torsoRotY" pos="0 0 0" axis="0 1 0" limited="true" range="-3.14 3.14" />
+                                                                    <body name="torsoRotZ" pos="0 0 0">
+                                                                        <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                        <joint name="torsoRotZ" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                                                                        <geom size="0.14 0.132" pos="0 0 0.12507" type="cylinder" contype="0" conaffinity="0" group="1" rgba="0.9 0.9 0.9 1" />
+                                                                        <body name="linnerShoulderTransX" pos="0 0 0">
+                                                                            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                            <joint name="linnerShoulderTransX" pos="0 0 0" axis="1 0 0" type="slide" limited="true" range="0 1" />
+                                                                            <body name="linnerShoulderTransY" pos="0 0 0">
+                                                                                <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                <joint name="linnerShoulderTransY" pos="0 0 0" axis="0 1 0" type="slide" limited="true" range="0 1" />
+                                                                                <body name="linnerShoulderTransZ" pos="0 0 0">
+                                                                                    <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                    <joint name="linnerShoulderTransZ" pos="0 0 0" axis="0 0 1" type="slide" limited="true" range="0 1" />
+                                                                                    <body name="linnerShoulderRotX" pos="0 0 0">
+                                                                                        <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                        <joint name="linnerShoulderRotX" pos="0 0 0" axis="1 0 0" limited="true" range="-3.14 3.14" />
+                                                                                        <body name="linnerShoulderRotY" pos="0 0 0">
+                                                                                            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                            <joint name="linnerShoulderRotY" pos="0 0 0" axis="0 1 0" limited="true" range="-3.14 3.14" />
+                                                                                            <body name="linnerShoulderRotZ" pos="0 0 0">
+                                                                                                <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                <joint name="linnerShoulderRotZ" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                                                                                                <body name="lShoulderTransX" pos="0 0 0">
+                                                                                                    <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                    <joint name="lShoulderTransX" pos="0 0 0" axis="1 0 0" type="slide" limited="true" range="0 1" />
+                                                                                                    <body name="lShoulderRotX" pos="0 0 0">
+                                                                                                        <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                        <joint name="lShoulderRotX" pos="0 0 0" axis="1 0 0" limited="true" range="-3.14 3.14" />
+                                                                                                        <body name="lShoulderRotY" pos="0 0 0">
+                                                                                                            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                            <joint name="lShoulderRotY" pos="0 0 0" axis="0 1 0" limited="true" range="-3.14 3.14" />
+                                                                                                            <body name="lShoulderRotZ" pos="0 0 0">
+                                                                                                                <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                <joint name="lShoulderRotZ" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                                                                                                                <geom size="0.05617" pos="-0.00282 -3e-05 0.00437" contype="0" conaffinity="0" group="1" rgba="0.9 0.9 0.9 1" />
+                                                                                                                <geom size="0.045 0.12375" pos="0.15745 0 0.00437" quat="0.707105 0 0.707108 0" type="cylinder" contype="0" conaffinity="0" group="1" rgba="0.9 0.9 0.9 1" />
+                                                                                                                <body name="lElbowTransX" pos="0 0 0">
+                                                                                                                    <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                    <joint name="lElbowTransX" pos="0 0 0" axis="1 0 0" type="slide" limited="true" range="0 1" />
+                                                                                                                    <body name="lElbowRotX" pos="0 0 0">
+                                                                                                                        <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                        <joint name="lElbowRotX" pos="0 0 0" axis="1 0 0" limited="true" range="-3.14 3.14" />
+                                                                                                                        <body name="lElbowRotY" pos="0 0 0">
+                                                                                                                            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                            <joint name="lElbowRotY" pos="0 0 0" axis="0 1 0" limited="true" range="-3.14 3.14" />
+                                                                                                                            <body name="lElbowRotZ" pos="0 0 0">
+                                                                                                                                <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                                <joint name="lElbowRotZ" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                                                                                                                                <geom size="0.04 0.1085" pos="0.13503 0 0.00437" quat="0.707105 0 0.707108 0" type="cylinder" contype="0" conaffinity="0" group="1" rgba="0.9 0.9 0.9 1" />
+                                                                                                                                <body name="lWristTransX" pos="0 0 0">
+                                                                                                                                    <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                                    <joint name="lWristTransX" pos="0 0 0" axis="1 0 0" type="slide" limited="true" range="0 1" />
+                                                                                                                                    <body name="lWristTransY" pos="0 0 0">
+                                                                                                                                        <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                                        <joint name="lWristTransY" pos="0 0 0" axis="0 1 0" type="slide" limited="true" range="0 1" />
+                                                                                                                                        <body name="lWristTransZ" pos="0 0 0">
+                                                                                                                                            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                                            <joint name="lWristTransZ" pos="0 0 0" axis="0 0 1" type="slide" limited="true" range="0 1" />
+                                                                                                                                            <body name="lWristRotX" pos="0 0 0">
+                                                                                                                                                <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                                                <joint name="lWristRotX" pos="0 0 0" axis="1 0 0" limited="true" range="-3.14 3.14" />
+                                                                                                                                                <body name="lWristRotY" pos="0 0 0">
+                                                                                                                                                    <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                                                    <joint name="lWristRotY" pos="0 0 0" axis="0 1 0" limited="true" range="-3.14 3.14" />
+                                                                                                                                                    <body name="lWristRotZ" pos="0 0 0">
+                                                                                                                                                        <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                                                        <joint name="lWristRotZ" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                                                                                                                                                        <geom size="0.035 0.05 0.0125" pos="0.08708 0 0.00437" quat="0.707105 0 0 0.707108" type="box" contype="0" conaffinity="0" group="1" rgba="0.9 0.9 0.9 1" />
+                                                                                                                                                    </body>
+                                                                                                                                                </body>
+                                                                                                                                            </body>
+                                                                                                                                        </body>
+                                                                                                                                    </body>
+                                                                                                                                </body>
+                                                                                                                            </body>
+                                                                                                                        </body>
+                                                                                                                    </body>
+                                                                                                                </body>
+                                                                                                            </body>
+                                                                                                        </body>
+                                                                                                    </body>
+                                                                                                </body>
+                                                                                            </body>
+                                                                                        </body>
+                                                                                    </body>
+                                                                                </body>
+                                                                            </body>
+                                                                        </body>
+                                                                        <body name="neckTransZ" pos="0 0 0">
+                                                                            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                            <joint name="neckTransZ" pos="0 0 0" axis="0 0 1" type="slide" limited="true" range="0 1" />
+                                                                            <body name="neckRotX" pos="0 0 0">
+                                                                                <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                <joint name="neckRotX" pos="0 0 0" axis="1 0 0" limited="true" range="-3.14 3.14" />
+                                                                                <body name="neckRotY" pos="0 0 0">
+                                                                                    <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                    <joint name="neckRotY" pos="0 0 0" axis="0 1 0" limited="true" range="-3.14 3.14" />
+                                                                                    <body name="neckRotZ" pos="0 0 0">
+                                                                                        <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                        <joint name="neckRotZ" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                                                                                        <geom size="0.056 0.022" pos="0 0 0.04533" type="cylinder" contype="0" conaffinity="0" group="1" rgba="0.9 0.9 0.9 1" />
+                                                                                        <body name="headTransY" pos="0 0 0">
+                                                                                            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                            <joint name="headTransY" pos="0 0 0" axis="0 1 0" type="slide" limited="true" range="0 1" />
+                                                                                            <body name="headTransZ" pos="0 0 0">
+                                                                                                <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                <joint name="headTransZ" pos="0 0 0" axis="0 0 1" type="slide" limited="true" range="0 1" />
+                                                                                                <body name="headRotX" pos="0 0 0">
+                                                                                                    <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                    <joint name="headRotX" pos="0 0 0" axis="1 0 0" limited="true" range="-3.14 3.14" />
+                                                                                                    <body name="headRotY" pos="0 0 0">
+                                                                                                        <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                        <joint name="headRotY" pos="0 0 0" axis="0 1 0" limited="true" range="-3.14 3.14" />
+                                                                                                        <body name="headRotZ" pos="0 0 0">
+                                                                                                            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                            <joint name="headRotZ" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                                                                                                            <geom size="0.13" pos="0 0.00075 0.02589" contype="0" conaffinity="0" group="1" rgba="0.9 0.9 0.9 1" />
+                                                                                                        </body>
+                                                                                                    </body>
+                                                                                                </body>
+                                                                                            </body>
+                                                                                        </body>
+                                                                                    </body>
+                                                                                </body>
+                                                                            </body>
+                                                                        </body>
+                                                                        <body name="rinnerShoulderTransX" pos="0 0 0">
+                                                                            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                            <joint name="rinnerShoulderTransX" pos="0 0 0" axis="1 0 0" type="slide" limited="true" range="0 1" />
+                                                                            <body name="rinnerShoulderTransY" pos="0 0 0">
+                                                                                <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                <joint name="rinnerShoulderTransY" pos="0 0 0" axis="0 1 0" type="slide" limited="true" range="0 1" />
+                                                                                <body name="rinnerShoulderTransZ" pos="0 0 0">
+                                                                                    <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                    <joint name="rinnerShoulderTransZ" pos="0 0 0" axis="0 0 1" type="slide" limited="true" range="0 1" />
+                                                                                    <body name="rinnerShoulderRotX" pos="0 0 0">
+                                                                                        <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                        <joint name="rinnerShoulderRotX" pos="0 0 0" axis="1 0 0" limited="true" range="-3.14 3.14" />
+                                                                                        <body name="rinnerShoulderRotY" pos="0 0 0">
+                                                                                            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                            <joint name="rinnerShoulderRotY" pos="0 0 0" axis="0 1 0" limited="true" range="-3.14 3.14" />
+                                                                                            <body name="rinnerShoulderRotZ" pos="0 0 0">
+                                                                                                <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                <joint name="rinnerShoulderRotZ" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                                                                                                <body name="rShoulderTransX" pos="0 0 0">
+                                                                                                    <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                    <joint name="rShoulderTransX" pos="0 0 0" axis="1 0 0" type="slide" limited="true" range="0 1" />
+                                                                                                    <body name="rShoulderRotX" pos="0 0 0">
+                                                                                                        <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                        <joint name="rShoulderRotX" pos="0 0 0" axis="1 0 0" limited="true" range="-3.14 3.14" />
+                                                                                                        <body name="rShoulderRotY" pos="0 0 0">
+                                                                                                            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                            <joint name="rShoulderRotY" pos="0 0 0" axis="0 1 0" limited="true" range="-3.14 3.14" />
+                                                                                                            <body name="rShoulderRotZ" pos="0 0 0">
+                                                                                                                <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                <joint name="rShoulderRotZ" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                                                                                                                <geom size="0.05617" pos="0.00165 -3e-05 0.00437" contype="0" conaffinity="0" group="1" rgba="0.9 0.9 0.9 1" />
+                                                                                                                <geom size="0.045 0.12375" pos="-0.15835 0 0.00437" quat="0.707105 0 0.707108 0" type="cylinder" contype="0" conaffinity="0" group="1" rgba="0.9 0.9 0.9 1" />
+                                                                                                                <body name="rElbowTransX" pos="0 0 0">
+                                                                                                                    <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                    <joint name="rElbowTransX" pos="0 0 0" axis="1 0 0" type="slide" limited="true" range="0 1" />
+                                                                                                                    <body name="rElbowRotX" pos="0 0 0">
+                                                                                                                        <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                        <joint name="rElbowRotX" pos="0 0 0" axis="1 0 0" limited="true" range="-3.14 3.14" />
+                                                                                                                        <body name="rElbowRotY" pos="0 0 0">
+                                                                                                                            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                            <joint name="rElbowRotY" pos="0 0 0" axis="0 1 0" limited="true" range="-3.14 3.14" />
+                                                                                                                            <body name="rElbowRotZ" pos="0 0 0">
+                                                                                                                                <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                                <joint name="rElbowRotZ" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                                                                                                                                <geom size="0.04 0.1085" pos="-0.1362 0 0.00437" quat="0.707105 0 0.707108 0" type="cylinder" contype="0" conaffinity="0" group="1" rgba="0.9 0.9 0.9 1" />
+                                                                                                                                <body name="rWristTransX" pos="0 0 0">
+                                                                                                                                    <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                                    <joint name="rWristTransX" pos="0 0 0" axis="1 0 0" type="slide" limited="true" range="0 1" />
+                                                                                                                                    <body name="rWristTransY" pos="0 0 0">
+                                                                                                                                        <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                                        <joint name="rWristTransY" pos="0 0 0" axis="0 1 0" type="slide" limited="true" range="0 1" />
+                                                                                                                                        <body name="rWristTransZ" pos="0 0 0">
+                                                                                                                                            <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                                            <joint name="rWristTransZ" pos="0 0 0" axis="0 0 1" type="slide" limited="true" range="0 1" />
+                                                                                                                                            <body name="rWristRotX" pos="0 0 0">
+                                                                                                                                                <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                                                <joint name="rWristRotX" pos="0 0 0" axis="1 0 0" limited="true" range="-3.14 3.14" />
+                                                                                                                                                <body name="rWristRotY" pos="0 0 0">
+                                                                                                                                                    <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                                                    <joint name="rWristRotY" pos="0 0 0" axis="0 1 0" limited="true" range="-3.14 3.14" />
+                                                                                                                                                    <body name="rWristRotZ" pos="0 0 0">
+                                                                                                                                                        <inertial pos="0 0 0" mass="1" diaginertia="1 1 1" />
+                                                                                                                                                        <joint name="rWristRotZ" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14 3.14" />
+                                                                                                                                                        <geom size="0.035 0.05 0.0125" pos="-0.08825 0 0.00437" quat="0.707105 0 0 0.707108" type="box" contype="0" conaffinity="0" group="1" rgba="0.9 0.9 0.9 1" />
+                                                                                                                                                    </body>
+                                                                                                                                                </body>
+                                                                                                                                            </body>
+                                                                                                                                        </body>
+                                                                                                                                    </body>
+                                                                                                                                </body>
+                                                                                                                            </body>
+                                                                                                                        </body>
+                                                                                                                    </body>
+                                                                                                                </body>
+                                                                                                            </body>
+                                                                                                        </body>
+                                                                                                    </body>
+                                                                                                </body>
+                                                                                            </body>
+                                                                                        </body>
+                                                                                    </body>
+                                                                                </body>
+                                                                            </body>
+                                                                        </body>
+                                                                    </body>
+                                                                </body>
+                                                            </body>
+                                                        </body>
+                                                    </body>
+                                                </body>
+                                            </body>
+                                        </body>
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+</mujoco>

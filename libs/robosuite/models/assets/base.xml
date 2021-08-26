@@ -1,0 +1,25 @@
+<!-- This is the base xml for all physics simulations. Set global configs here. -->
+<mujoco model="base">
+    <compiler angle="radian"/>
+    <option impratio="20" cone="elliptic" timestep="0.002"/>
+    <!--    <option timestep="1.2306854016793888e-05" o_solref="3.6920562050381665e-05 1." tolerance="1E-18">-->
+    <!--        <flag override="enable"/>-->
+    <!--    </option>-->
+
+    <size nconmax="200" njmax="200"/>
+
+    <asset>
+    </asset>
+
+    <actuator>
+    </actuator>
+
+    <sensor>
+    </sensor>
+
+    <worldbody>
+    </worldbody>
+
+    <equality>
+    </equality>
+</mujoco>

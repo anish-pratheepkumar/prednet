@@ -1,0 +1,1 @@
+from .workplace import WorkplaceModel

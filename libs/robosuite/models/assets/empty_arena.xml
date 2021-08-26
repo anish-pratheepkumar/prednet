@@ -1,0 +1,27 @@
+<mujoco model="empty_arena">
+    <asset>
+        <texture builtin="gradient" height="256" rgb1=".9 .9 1." rgb2=".2 .3 .4" type="skybox" width="256"/>
+        <texture builtin="checker" height="512" name="texplane" rgb1=".2 .3 .4" rgb2=".1 0.15 0.2" type="2d"
+                 width="512"/>
+        <material name="floorplane" reflectance="0" texrepeat="1 1" texture="texplane" texuniform="true"/>
+        <material name="table_mat" specular="0" shininess="0.5" reflectance="0" rgba="0.93 0.93 0.93 1"/>
+
+    </asset>
+    <worldbody>
+        <!--geom condim="3" material="floorplane" name="floor" pos="-2 1.5 0" size="-10 10 .125" type="plane"/-->
+        <geom condim="3" rgba=" 0.1 0.1 0.1 1" name="floor" pos="0. 0. 0." size="-10 -10 .125" type="plane"/>
+
+        <light diffuse=".8 .8 .8" dir="0 -.15 -1" directional="false" pos="1 1 4.0" specular="0.3 0.3 0.3"
+               castshadow="false"/>
+        <light diffuse=".8 .8 .8" dir="0 -.15 -1" directional="false" pos="-3. -3. 4.0" specular="0.3 0.3 0.3"
+               castshadow="false"/>
+        <light directional="true" ambient="0.2 0.2 0.2" diffuse="0.8 0.8 0.8" specular="0.3 0.3 0.3" castshadow="false"
+               pos="0 0 4" dir="0 0 -1" name="light0"/>
+        <!-- front view -->
+        <camera mode="fixed" name="frontview" pos="3.0 0 1.85" quat="0.56 0.43 0.43 0.56"/>
+        <!-- bird view -->
+        <camera mode="fixed" name="birdview" pos="0.0 0 3.0" quat="0.7071 0 0 0.7071"/>
+        <!-- agent view -->
+        <camera mode="fixed" name="agentview" pos="3.0 0 1.85" quat="0.56 0.43 0.43 0.56"/>
+    </worldbody>
+</mujoco>
