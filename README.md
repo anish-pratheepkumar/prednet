@@ -21,7 +21,7 @@ published in the ETFA 2021.
 2. Using conda, install this repo's dependencies:
 
   ```bash
-  conda env create -f env_OS.yml
+  conda env create -f env_<OS>.yml
   ``` 
 
 `OS` is either `linux` or `windows`.
@@ -45,8 +45,9 @@ __Note__: Blender 2.92 was tested and used to produce the results in the paper.
 Two datasets are supported by this repo:
 
 1. HRI synthetic dataset
-2. [Mogaze](https://github.com/humans-to-robots-motion/mogaze) real-world dataset: ### A. HRI synthetic data (
-   self-developed in simulation)
+2. [Mogaze](https://github.com/humans-to-robots-motion/mogaze) real-world dataset: 
+
+### A. HRI synthetic data (self-developed in simulation)
    The HRI synthetic data developed in this work are located under: `data/hri_data`. The data contains three scenario
    types:
    co-operating, co-existing and noise. To visualize a scenario, in a terminal with the `motion_prediction` conda env
@@ -207,7 +208,7 @@ This repo uses/includes:
   repo.
 
 We do not intend to violate any license of the aforementioned libraries or dependencies used in this project, some of
-which are also listed under `env_OS.yml`. If we violate your license(s), please let us know!
+which are also listed under `env_<OS>.yml`. If we violate your license(s), please let us know!
 
 # 5. Cite  <a name="cite"></a>
 
