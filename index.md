@@ -8,11 +8,10 @@ description: a simple Human Motion Prediction Network for Human-Robot Interactio
 
 The IEEE 26th International Conference on Emerging Technologies and Factory Automation (ETFA), accepted June 2021.
 
-Preprint: 
+[Paper]( https://ieeexplore.ieee.org/document/9613465)
 
-Code: 
-
-Slides: 
+[Code](https://github.com/anish-pratheepkumar/prednet)
+ 
 
 ---
 <img src="images/scenarios.png" width="407" height="350">
